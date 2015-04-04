@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kayvin.llamabuilder.MainActivity" >
+
+    <ImageButton
+        android:id="@+id/LLAMA"
+        android:layout_width="fill_parent"
+        android:layout_height="370dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="llamaClicked"
+        android:src="@drawable/llama" />
+
+    <Button
+        android:id="@+id/SHOWDIF"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/LLAMA"
+        android:layout_alignParentBottom="true"
+        android:onClick="showDifLlama"
+        android:text="Show me different Llama!"
+        android:textSize="15dp" />
+    
+</RelativeLayout>
